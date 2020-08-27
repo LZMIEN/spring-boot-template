@@ -38,7 +38,7 @@ import org.springframework.context.annotation.ComponentScan;
 //        "com.github.shepherdviolet.webdemo.demo.apollo.config",
 //        "com.github.shepherdviolet.webdemo.demo.rocketmq.config",
 })
-//Spring Boot Admin server (控制台服务端, 容器需改为Tomcat, 控制台地址: http://localhost:8080/admin, 改过URL(默认没/admin), 见application.yaml)
+//Spring Boot Admin server (控制台服务端, 容器需改为Tomcat, 控制台地址: http://localhost:8000/admin, 改过URL(默认没/admin), 见application.yaml)
 @EnableAdminServer
 public class BootApplication {
 
@@ -115,7 +115,7 @@ public class BootApplication {
 //    public WebServerFactoryCustomizer<ConfigurableUndertowWebServerFactory> webServerFactoryCustomizer() {
 //        return factory -> {
 //            factory.addDeploymentInfoCustomizers(deploymentInfo -> {
-//                //禁用HTTP TRACE, 测试:curl -v -X TRACE http://localhost:8080/
+//                //禁用HTTP TRACE, 测试:curl -v -X TRACE http://localhost:8000/
 //                deploymentInfo.addSecurityConstraint(new SecurityConstraint()
 //                        .addWebResourceCollection(
 //                                new WebResourceCollection()

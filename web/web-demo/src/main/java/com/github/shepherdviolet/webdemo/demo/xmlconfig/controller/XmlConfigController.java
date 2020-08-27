@@ -22,7 +22,7 @@ public class XmlConfigController {
     private XmlBeanWrapper xmlBeanWrapper;
 
     /**
-     * http://localhost:8080/xmlconfig
+     * http://localhost:8000/xmlconfig
      */
     @RequestMapping("")
     public String test() {

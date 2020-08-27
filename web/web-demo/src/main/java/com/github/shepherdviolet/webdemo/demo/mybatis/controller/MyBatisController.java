@@ -24,7 +24,7 @@ public class MyBatisController {
     private UserService userService;
 
     /**
-     * http://localhost:8080/mybatis/user/add?username=wang&password=123456&phone=13011112222
+     * http://localhost:8000/mybatis/user/add?username=wang&password=123456&phone=13011112222
      */
     @RequestMapping("/user/add")
     public String userAdd(@RequestParam String username, @RequestParam String password, @RequestParam(required = false) String phone){
@@ -40,7 +40,7 @@ public class MyBatisController {
     }
 
     /**
-     * http://localhost:8080/mybatis/user/get
+     * http://localhost:8000/mybatis/user/get
      */
     @RequestMapping("/user/get")
     public String userGet(){

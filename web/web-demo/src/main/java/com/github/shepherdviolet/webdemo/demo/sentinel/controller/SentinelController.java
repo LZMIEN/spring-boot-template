@@ -24,7 +24,7 @@
 //    /**
 //     * 注解声明资源
 //     * GET
-//     * http://localhost:8080/sentinel/annotation?arg=1
+//     * http://localhost:8000/sentinel/annotation?arg=1
 //     */
 //    @SentinelResource(value = "test-annotation", blockHandler = "onBlock")
 //    @RequestMapping(value = "/annotation")
@@ -41,7 +41,7 @@
 //    /**
 //     * API声明资源
 //     * GET
-//     * http://localhost:8080/sentinel/api?arg=1
+//     * http://localhost:8000/sentinel/api?arg=1
 //     */
 //    @RequestMapping(value = "/api")
 //    public String testApi(@RequestParam(required = false) String arg) {

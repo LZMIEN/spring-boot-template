@@ -18,7 +18,7 @@ public class BasicController {
 
     /**
      * NCR编码转换:unicode
-     * http://localhost:8080/basic/ncr/unicode
+     * http://localhost:8000/basic/ncr/unicode
      */
     @RequestMapping("/ncr/unicode")
     public String ncrUnicode() {
@@ -27,7 +27,7 @@ public class BasicController {
 
     /**
      * NCR编码转换:utf-8
-     * http://localhost:8080/basic/ncr/utf8
+     * http://localhost:8000/basic/ncr/utf8
      */
     @RequestMapping("/ncr/utf8")
     public String ncrUtf8() {
@@ -36,7 +36,7 @@ public class BasicController {
 
     /**
      * NCR编码转换:ascii
-     * http://localhost:8080/basic/ncr/ascii
+     * http://localhost:8000/basic/ncr/ascii
      */
     @RequestMapping("/ncr/ascii")
     public String ncrAscii() {
@@ -45,7 +45,7 @@ public class BasicController {
 
     /**
      * NCR编码转换:urlEncode
-     * http://localhost:8080/basic/ncr/url
+     * http://localhost:8000/basic/ncr/url
      */
     @RequestMapping("/ncr/url")
     public String ncrUrl() {

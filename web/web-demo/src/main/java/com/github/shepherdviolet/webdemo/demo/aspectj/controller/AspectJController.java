@@ -32,7 +32,7 @@ public class AspectJController {
     private TestAJService testAJService;
 
     /**
-     * http://localhost:8080/aspectj
+     * http://localhost:8000/aspectj
      */
     @RequestMapping("")
     public String test() {

@@ -30,7 +30,7 @@ public class FileUploadController {
 
     /**
      * 获取文件上传页面
-     * http://localhost:8080/fileupload/html
+     * http://localhost:8000/fileupload/html
      */
     @RequestMapping("/html")
     public String html() {
@@ -39,7 +39,7 @@ public class FileUploadController {
 
     /**
      * 文件上传逻辑
-     * http://localhost:8080/fileupload/upload
+     * http://localhost:8000/fileupload/upload
      */
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     @ResponseBody

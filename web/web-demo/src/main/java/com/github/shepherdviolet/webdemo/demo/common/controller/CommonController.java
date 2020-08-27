@@ -20,7 +20,7 @@ public class CommonController {
     private SampleService sampleService;
 
     /**
-     * http://localhost:8080/common
+     * http://localhost:8000/common
      */
     @RequestMapping("")
     public String test() {

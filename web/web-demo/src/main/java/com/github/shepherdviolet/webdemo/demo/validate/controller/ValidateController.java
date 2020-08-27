@@ -29,7 +29,7 @@ public class ValidateController {
     /**
      * Valid注解
      * POST | GET
-     * http://localhost:8080/validate/annotation
+     * http://localhost:8000/validate/annotation
      */
     @RequestMapping(value = "/annotation", method = RequestMethod.GET)
     public String validateAnnotation1(@Valid Request1 request) {
@@ -48,7 +48,7 @@ public class ValidateController {
     /**
      * Valid注解, 自定义检查
      * POST | GET
-     * http://localhost:8080/validate/custom
+     * http://localhost:8000/validate/custom
      */
     @RequestMapping(value = "/custom", method = RequestMethod.GET)
     public String validateCustom1(@Valid Request2 request) {
@@ -70,7 +70,7 @@ public class ValidateController {
     /**
      * Valid注解, 手动检查
      * POST | GET
-     * http://localhost:8080/validate/manually
+     * http://localhost:8000/validate/manually
      */
     @RequestMapping(value = "/manually", method = RequestMethod.GET)
     public String validateManually1(Request1 request, HttpServletRequest rawRequest) {

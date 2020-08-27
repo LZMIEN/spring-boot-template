@@ -44,7 +44,7 @@ public class RocketMqController {
     /**
      * 普通并发消息同步发送
      * GET
-     * http://localhost:8080/rocketmq/simple-sync
+     * http://localhost:8000/rocketmq/simple-sync
      */
     @RequestMapping(value = "/simple-sync")
     public String simpleSync() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -62,7 +62,7 @@ public class RocketMqController {
     /**
      * 顺序消息同步发送
      * GET
-     * http://localhost:8080/rocketmq/ordered-sync
+     * http://localhost:8000/rocketmq/ordered-sync
      */
     @RequestMapping(value = "/ordered-sync")
     public String orderedSync() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -85,7 +85,7 @@ public class RocketMqController {
     /**
      * 广播消息同步发送
      * GET
-     * http://localhost:8080/rocketmq/broadcast-sync
+     * http://localhost:8000/rocketmq/broadcast-sync
      */
     @RequestMapping(value = "/broadcast-sync")
     public String broadcastSync() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -101,7 +101,7 @@ public class RocketMqController {
     /**
      * 定时消息同步发送
      * GET
-     * http://localhost:8080/rocketmq/schedule-sync
+     * http://localhost:8000/rocketmq/schedule-sync
      */
     @RequestMapping(value = "/schedule-sync")
     public String scheduleSync() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -119,7 +119,7 @@ public class RocketMqController {
     /**
      * 批量消息同步发送
      * GET
-     * http://localhost:8080/rocketmq/batch-sync
+     * http://localhost:8000/rocketmq/batch-sync
      */
     @RequestMapping(value = "/batch-sync")
     public String batchSync() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -141,7 +141,7 @@ public class RocketMqController {
     /**
      * 参数过滤消息同步发送, 需要Broker配置enablePropertyFilter=true
      * GET
-     * http://localhost:8080/rocketmq/filter-sync
+     * http://localhost:8000/rocketmq/filter-sync
      */
     @RequestMapping(value = "/filter-sync")
     public String filterSync() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -158,7 +158,7 @@ public class RocketMqController {
     /**
      * 事务消息发送
      * GET
-     * http://localhost:8080/rocketmq/transactional-sync
+     * http://localhost:8000/rocketmq/transactional-sync
      *
      * 过程
      * RocketMqTransactionalProducer local transaction -> 等待分钟级 (因为本地事务返回了UNKNOW)
@@ -184,7 +184,7 @@ public class RocketMqController {
     /**
      * Slate RocketMQHelper Test: Invoker test
      * GET
-     * http://localhost:8080/rocketmq/helper/invoker
+     * http://localhost:8000/rocketmq/helper/invoker
      */
     @RequestMapping(value = "/helper/invoker")
     public String helperInvoker() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -206,7 +206,7 @@ public class RocketMqController {
     /**
      * Slate RocketMQHelper Test: Broadcast test
      * GET
-     * http://localhost:8080/rocketmq/helper/broadcast
+     * http://localhost:8000/rocketmq/helper/broadcast
      */
     @RequestMapping(value = "/helper/broadcast")
     public String helperBroadcast() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -217,7 +217,7 @@ public class RocketMqController {
     /**
      * Slate RocketMQHelper Test: Reconsume test
      * GET
-     * http://localhost:8080/rocketmq/helper/reconsume
+     * http://localhost:8000/rocketmq/helper/reconsume
      */
     @RequestMapping(value = "/helper/reconsume")
     public String helperReconsume() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -230,7 +230,7 @@ public class RocketMqController {
     /**
      * Slate RocketMQHelper Test: Sql filter test
      * GET
-     * http://localhost:8080/rocketmq/helper/filter
+     * http://localhost:8000/rocketmq/helper/filter
      */
     @RequestMapping(value = "/helper/filter")
     public String helperFilter() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -243,7 +243,7 @@ public class RocketMqController {
     /**
      * Slate RocketMQHelper Test: Custom consumer test
      * GET
-     * http://localhost:8080/rocketmq/helper/custom
+     * http://localhost:8000/rocketmq/helper/custom
      */
     @RequestMapping(value = "/helper/custom")
     public String helperCustom() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -254,7 +254,7 @@ public class RocketMqController {
     /**
      * Slate RocketMQHelper Test: Ordered message test
      * GET
-     * http://localhost:8080/rocketmq/helper/ordered
+     * http://localhost:8000/rocketmq/helper/ordered
      */
     @RequestMapping(value = "/helper/ordered")
     public String helperOrdered() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
@@ -282,7 +282,7 @@ public class RocketMqController {
 //    /**
 //     * rocketmq-spring-boot-starter Test: simple
 //     * GET
-//     * http://localhost:8080/rocketmq/starter/simple
+//     * http://localhost:8000/rocketmq/starter/simple
 //     * 注意: 要用rocketmq-spring-boot-starter的话, 就不要自己创建DefaultMQProducer了, 要创建也不要start()
 //     */
 //    @RequestMapping(value = "/starter/simple")

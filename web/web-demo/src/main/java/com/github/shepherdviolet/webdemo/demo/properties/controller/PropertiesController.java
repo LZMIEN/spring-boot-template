@@ -37,7 +37,7 @@ public class PropertiesController {
     private Properties myProperties;
 
     /**
-     * http://localhost:8080/properties/
+     * http://localhost:8000/properties/
      */
     @RequestMapping("")
     public String test() {

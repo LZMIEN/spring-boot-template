@@ -29,7 +29,7 @@ public class AnnotationProxyController {
     private CustomService customService;
 
     /**
-     * http://localhost:8080/annoproxy/service1
+     * http://localhost:8000/annoproxy/service1
      */
     @RequestMapping("/service1")
     public String service1(){
@@ -38,7 +38,7 @@ public class AnnotationProxyController {
     }
 
     /**
-     * http://localhost:8080/annoproxy/service2
+     * http://localhost:8000/annoproxy/service2
      */
     @RequestMapping("/service2")
     public String service2(){
@@ -47,7 +47,7 @@ public class AnnotationProxyController {
     }
 
     /**
-     * http://localhost:8080/annoproxy/service3
+     * http://localhost:8000/annoproxy/service3
      */
     @RequestMapping("/service3")
     public String service3(){

@@ -69,7 +69,7 @@ public class ErrorHandlerImpl implements ErrorHandler {
         }
 
         //打印日志
-        logger.error("Error uri:" + request.getAttribute(SERVLET_ERROR_PREFIX + REQUEST_URI), throwable);
+        logger.error("Error occurred! The request uri is " + request.getAttribute(SERVLET_ERROR_PREFIX + REQUEST_URI), throwable);
 
         return buildResponse(request, errorCode, errorDescription, args);
     }
@@ -83,7 +83,8 @@ public class ErrorHandlerImpl implements ErrorHandler {
                 request.getAttribute(SERVLET_ERROR_PREFIX + MESSAGE);
 
         //打印日志
-        logger.error("Error uri:" + request.getAttribute(SERVLET_ERROR_PREFIX + REQUEST_URI) + ", error description:" + errorDescription);
+        logger.error("Error occurred! The request uri is " + request.getAttribute(SERVLET_ERROR_PREFIX + REQUEST_URI) + ", error description: " + errorDescription,
+                new Exception(errorDescription));
 
         return buildResponse(request, RejectException.UNDEFINED_ERROR_CODE, errorDescription, null);
     }

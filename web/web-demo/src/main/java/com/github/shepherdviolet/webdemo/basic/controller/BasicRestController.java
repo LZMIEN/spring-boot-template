@@ -37,7 +37,7 @@ public class BasicRestController {
 
     /**
      * POST or GET, return JSON
-     * http://localhost:8080/basic/postget/bean
+     * http://localhost:8000/basic/postget/bean
      */
     @RequestMapping(value = "/postget/bean", method = RequestMethod.GET)
     public TestResponse postOrGetBean1(TestRequest request){
@@ -56,7 +56,7 @@ public class BasicRestController {
 
     /**
      * GET, return json
-     * http://localhost:8080/basic/get/json?name=a&key=b
+     * http://localhost:8000/basic/get/json?name=a&key=b
      */
     @RequestMapping("/get/json")
     public String getJson(@RequestParam String name, @RequestParam String key) {
@@ -66,7 +66,7 @@ public class BasicRestController {
 
     /**
      * GET, return json
-     * http://localhost:8080/basic/get/json2?name=a&key=b&any=anyvalue
+     * http://localhost:8000/basic/get/json2?name=a&key=b&any=anyvalue
      */
     @RequestMapping("/get/json2")
     public Map<String, Object> getJson2(@RequestParam Map<String, Object> params) {
@@ -78,7 +78,7 @@ public class BasicRestController {
 
     /**
      * GET, return json
-     * http://localhost:8080/basic/get/wildcard/somepath
+     * http://localhost:8000/basic/get/wildcard/somepath
      */
     @RequestMapping("/get/wildcard/**")
     public String getJsonWildcard() {
@@ -88,7 +88,7 @@ public class BasicRestController {
 
     /**
      * POST, return json
-     * http://localhost:8080/basic/post/json
+     * http://localhost:8000/basic/post/json
      */
     @RequestMapping("/post/json")
     public Map<String, Object> postJson(@RequestBody String body) {
@@ -101,7 +101,7 @@ public class BasicRestController {
 
     /**
      * GET, return error
-     * http://localhost:8080/basic/exception
+     * http://localhost:8000/basic/exception
      */
     @RequestMapping("/exception")
     public String exception() {
@@ -110,7 +110,7 @@ public class BasicRestController {
 
     /**
      * redirect
-     * http://localhost:8080/basic/redirect
+     * http://localhost:8000/basic/redirect
      */
     @RequestMapping("/redirect")
     public byte[] redirect(HttpServletResponse response) throws IOException {

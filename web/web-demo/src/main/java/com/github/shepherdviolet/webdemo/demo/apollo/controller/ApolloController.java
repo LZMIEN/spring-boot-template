@@ -24,7 +24,7 @@ public class ApolloController {
     private ApolloRefreshableProperties demoRefreshableProperties;
 
     /**
-     * http://localhost:8080/apollo/refreshable?key=key1
+     * http://localhost:8000/apollo/refreshable?key=key1
      */
     @RequestMapping("/refreshable")
     public String service1(@RequestParam String key){

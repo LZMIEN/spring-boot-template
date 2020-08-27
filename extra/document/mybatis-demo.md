@@ -81,7 +81,7 @@ mybatis:
         web-allow-others: true
 ```
 
-* 登录WEB控制台: http://localhost:8080/h2-console
+* 登录WEB控制台: http://localhost:8000/h2-console
 * `JDBC URL`设置为`jdbc:h2:~/test`可查看系统表
 * `JDBC URL`设置为`jdbc:h2:mem:h2db1`可查看用户表
 * 用户名`sa`密码`sa`

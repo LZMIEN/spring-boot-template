@@ -62,7 +62,10 @@ dependencies {
     //Apollo///////////////////////////////////////////////////////////////////////////////////////////
 
     //Apollo client ( -Denv=dev is required )
-//    implementation "com.ctrip.framework.apollo:apollo-client:$version_apollo"
+//    implementation ("com.ctrip.framework.apollo:apollo-client:$version_apollo") {
+//        //和Springboot的版本冲突
+//        exclude group: "org.yaml"
+//    }
 
     //APM//////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -75,7 +78,7 @@ dependencies {
 
     //Spring Boot Admin///////////////////////////////////////////////////////////////////////////////
 
-    //Spring Boot Admin server (控制台服务端, 容器需改为Tomcat, http://localhost:8080)
+    //Spring Boot Admin server (控制台服务端, 容器需改为Tomcat, http://localhost:8000)
     //特殊情况: 在这里SpringBootAdmin和RocketMQ的netty包有冲突, 要启用这个先把RocketMQ依赖的netty排除掉(错误:java.lang.NoSuchMethodError: io.netty.bootstrap.Bootstrap.config)
     implementation "de.codecentric:spring-boot-admin-starter-server:$version_spring_boot_admin"
     //Spring Boot Admin client (控制台客户端)
