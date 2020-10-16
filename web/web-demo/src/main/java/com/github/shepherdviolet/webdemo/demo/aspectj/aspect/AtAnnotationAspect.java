@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
- * <pre>@annotation()示例</pre>
+ * <pre>@annotation()示例, 匹配注解</pre>
  */
 @Component
 @Aspect

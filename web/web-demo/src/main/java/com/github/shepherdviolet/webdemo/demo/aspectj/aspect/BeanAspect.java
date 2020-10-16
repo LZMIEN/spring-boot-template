@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
- * bean()示例
+ * bean()示例, 匹配Bean
  */
 @Component
 @Aspect
